@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --color-primary: #4F46E5;
+  --color-secondary: #7C3AED;
+  --color-accent: #14B8A6;
+  --color-bg: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #64748B;
+  --color-border: #E2E8F0;
+  --color-success: #16A34A;
+  --color-warning: #F59E0B;
+  --color-error: #DC2626;
+}
+
+.dark {
+  --color-bg: #0B1120;
+  --color-surface: #111827;
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #94A3B8;
+  --color-border: #1F2937;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Glassmorphism Subtle */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+.dark .glass-panel {
+  background: rgba(17, 24, 39, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(31, 41, 55, 0.8);
+}
+
+/* Glow effects */
+.glow-primary {
+  box-shadow: 0 0 25px -5px rgba(79, 70, 229, 0.35);
+}
+
+.glow-secondary {
+  box-shadow: 0 0 25px -5px rgba(124, 58, 237, 0.35);
+}
+
+.glow-accent {
+  box-shadow: 0 0 25px -5px rgba(20, 184, 166, 0.35);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+/* Pulse animation */
+@keyframes subtle-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.95; }
+  50% { transform: scale(1.03); opacity: 1; }
+}
+.animate-subtle-pulse {
+  animation: subtle-pulse 3s infinite ease-in-out;
+}
+
+/* Node pulse */
+@keyframes node-glow {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(79, 70, 229, 0.6)); }
+  50% { filter: drop-shadow(0 0 10px rgba(124, 58, 237, 0.9)); }
+}
+.animate-node-glow {
+  animation: node-glow 2.5s infinite ease-in-out;
+}
+
+/* Range input styling */
+input[type=range] {
+  accent-color: #4F46E5;
+}
+
+/* Transitions */
+.view-enter {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
