@@ -1,23 +1,22 @@
 {
-  "name": "client",
-  "private": true,
-  "version": "0.0.0",
+  "name": "edutwin",
+  "version": "1.0.0",
+  "description": "EduTwin — AI-Powered Digital Student Twin: Understand yourself. Improve your skills. Build your future.",
   "type": "module",
+  "main": "server/src/server.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "oxlint",
-    "preview": "vite preview"
+    "start": "node server/src/server.js",
+    "dev": "node server/src/server.js"
   },
-  "dependencies": {
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8"
-  },
-  "devDependencies": {
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.7",
-    "@vitejs/plugin-react": "^6.1.1",
-    "oxlint": "^1.81.0",
-    "vite": "^8.3.0"
-  }
+  "keywords": [
+    "edtech",
+    "ai",
+    "digital-twin",
+    "education",
+    "skills-gap",
+    "career-guidance",
+    "hackathon"
+  ],
+  "author": "shaikbasheera08",
+  "license": "MIT"
 }
