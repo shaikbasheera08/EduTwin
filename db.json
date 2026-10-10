@@ -1,0 +1,313 @@
+{
+  "users": [
+    {
+      "id": "user-demo-rahul",
+      "name": "Rahul Kumar",
+      "email": "rahul.demo@edutwin.ai",
+      "passwordHash": "00e041f02699d59cb968abefcafa6873:e48eab1a92eadfe271fe70fbde6a17dc49c18daca7bb8c20b7f0f570643695ea33af389077e2f79814c70489e3d5df4e620059a0c7bc1cc82036b4cc3bd2c891",
+      "isDemo": true,
+      "createdAt": "2026-10-10T06:26:54.807Z"
+    },
+    {
+      "id": "user-1791615210258-7ycnv",
+      "createdAt": "2026-10-10T06:53:30.258Z",
+      "name": "Priya Sharma",
+      "email": "priya.sharma@gmail.com",
+      "googleAuth": true,
+      "picture": null,
+      "isDemo": false
+    }
+  ],
+  "students": [
+    {
+      "id": "student-demo-rahul",
+      "userId": "user-demo-rahul",
+      "name": "Rahul Kumar",
+      "age": 21,
+      "college": "National Institute of Technology",
+      "degree": "B.Tech",
+      "branch": "Computer Science and Engineering",
+      "academicYear": "3rd Year (Semester 6)",
+      "cgpa": 8.2,
+      "maxCgpa": 10,
+      "attendance": 88,
+      "subjectMarks": {
+        "Programming": 88,
+        "Data Structures": 82,
+        "DBMS": 79,
+        "Operating Systems": 74,
+        "Computer Networks": 76,
+        "Mathematics": 85
+      },
+      "skills": {
+        "Python": 80,
+        "Java": 65,
+        "C": 70,
+        "HTML": 90,
+        "CSS": 85,
+        "JavaScript": 60,
+        "React": 30,
+        "Node.js": 20,
+        "SQL": 55,
+        "Git": 40
+      },
+      "interests": [
+        "Web Development",
+        "AI / Machine Learning"
+      ],
+      "careerGoal": "Full Stack Developer",
+      "targetDescription": "Aspiring Full Stack Engineer aiming for top product teams. Focus on modern JavaScript, React micro-frontends, and scalable Node.js services.",
+      "careerReadiness": 65,
+      "overallSkillScore": 60,
+      "academicHealth": 84,
+      "digitalTwinCompleteness": 95,
+      "updatedAt": "2026-10-10T06:26:54.806Z"
+    },
+    {
+      "id": "student-1791615323843-gaox4",
+      "updatedAt": "2026-10-10T06:55:23.843Z",
+      "userId": "user-1791615210258-7ycnv",
+      "name": "deena",
+      "age": 23,
+      "college": "VIT",
+      "degree": "B.Tech",
+      "branch": "Computer Science and Engineering",
+      "academicYear": "3rd Year",
+      "cgpa": 8.8,
+      "maxCgpa": 10,
+      "attendance": 93,
+      "subjectMarks": {
+        "Programming": 50,
+        "Data Structures": 55,
+        "DBMS": 58,
+        "Operating Systems": 60,
+        "Computer Networks": 70,
+        "Mathematics": 70
+      },
+      "skills": {
+        "Python": 22,
+        "Java": 41,
+        "C": 50,
+        "HTML": 52,
+        "CSS": 20,
+        "JavaScript": 25,
+        "React": 9,
+        "Node.js": 25,
+        "SQL": 60,
+        "Git": 45
+      },
+      "interests": [
+        "Web Development",
+        "Cloud Computing",
+        "Software Development"
+      ],
+      "careerGoal": "Full Stack Developer",
+      "targetDescription": "",
+      "careerReadiness": 50,
+      "overallSkillScore": 35,
+      "academicHealth": 90,
+      "digitalTwinCompleteness": 100
+    }
+  ],
+  "learningPlans": [
+    {
+      "id": "plan-demo-rahul",
+      "studentId": "student-demo-rahul",
+      "careerGoal": "Full Stack Developer",
+      "tasks": [
+        {
+          "id": "task-1",
+          "week": 1,
+          "title": "JavaScript Modern ES6+ & Async Patterns",
+          "description": "Master promises, async/await, closures, and modular scoping. Build interactive DOM utilities.",
+          "estimatedHours": 6,
+          "status": "completed",
+          "resource": "MDN Web Docs & JavaScript.info",
+          "completedAt": "2026-10-02T10:00:00.000Z"
+        },
+        {
+          "id": "task-2",
+          "week": 1,
+          "title": "Data Fetching & REST API Consumption",
+          "description": "Implement robust fetch handlers with error boundaries, loading states, and cancellation.",
+          "estimatedHours": 5,
+          "status": "completed",
+          "resource": "Web.dev API Guides",
+          "completedAt": "2026-10-05T14:30:00.000Z"
+        },
+        {
+          "id": "task-3",
+          "week": 2,
+          "title": "React Core Architecture & Hooks",
+          "description": "Deep dive into useState, useEffect, useMemo, custom hooks, and functional component lifecycle.",
+          "estimatedHours": 8,
+          "status": "completed",
+          "resource": "React.dev Official Documentation",
+          "completedAt": "2026-10-08T18:00:00.000Z"
+        },
+        {
+          "id": "task-4",
+          "week": 2,
+          "title": "State Management & Reusable UI Component Library",
+          "description": "Build a modular component system with accessible forms, modals, and design tokens.",
+          "estimatedHours": 7,
+          "status": "completed",
+          "resource": "Tailwind UI & Component Patterns",
+          "completedAt": "2026-10-10T06:34:34.849Z"
+        },
+        {
+          "id": "task-5",
+          "week": 3,
+          "title": "Node.js & Express RESTful Server Architecture",
+          "description": "Create an Express application with modular routing, middleware pipelines, and JWT authentication.",
+          "estimatedHours": 9,
+          "status": "pending",
+          "resource": "Express.js Security & Architecture Handbook",
+          "completedAt": null
+        },
+        {
+          "id": "task-6",
+          "week": 3,
+          "title": "Database Schema Design & SQL Queries",
+          "description": "Model relational schemas, write multi-table JOINs, indexes, and parameterized queries.",
+          "estimatedHours": 8,
+          "status": "pending",
+          "resource": "PostgreSQL Tutorial & Schema Design",
+          "completedAt": null
+        },
+        {
+          "id": "task-7",
+          "week": 4,
+          "title": "Full Stack Integration & Authentication Flows",
+          "description": "Connect React frontend with Express backend, secure cookie/bearer sessions, and CSRF protection.",
+          "estimatedHours": 10,
+          "status": "pending",
+          "resource": "OWASP Authentication Cheat Sheet",
+          "completedAt": null
+        },
+        {
+          "id": "task-8",
+          "week": 4,
+          "title": "Git Version Control & CI/CD Deployment",
+          "description": "Feature-branch workflow, pull requests, automated testing, and production deployment.",
+          "estimatedHours": 6,
+          "status": "pending",
+          "resource": "GitHub Actions & Deployment Guide",
+          "completedAt": null
+        }
+      ],
+      "updatedAt": "2026-10-10T06:34:34.849Z"
+    }
+  ],
+  "simulations": [
+    {
+      "id": "sim-1791615393590-h5ul",
+      "createdAt": "2026-10-10T06:56:33.590Z",
+      "studentId": "student-1791615323843-gaox4",
+      "targetCareer": "Full Stack Developer",
+      "originalReadiness": 50,
+      "simulatedReadiness": 61,
+      "delta": 11,
+      "changes": {
+        "JavaScript": 40,
+        "React": 15,
+        "Node.js": 46,
+        "SQL": 80,
+        "Git": 85
+      }
+    },
+    {
+      "id": "sim-1791615381517-y75g",
+      "createdAt": "2026-10-10T06:56:21.517Z",
+      "studentId": "student-1791615323843-gaox4",
+      "targetCareer": "Full Stack Developer",
+      "originalReadiness": 50,
+      "simulatedReadiness": 49,
+      "delta": -1,
+      "changes": {
+        "JavaScript": 25,
+        "React": 9,
+        "Node.js": 25,
+        "SQL": 60,
+        "Git": 45
+      }
+    },
+    {
+      "id": "sim-1791614074842-xmyb",
+      "createdAt": "2026-10-10T06:34:34.842Z",
+      "studentId": "student-demo-rahul",
+      "targetCareer": "Full Stack Developer",
+      "originalReadiness": 65,
+      "simulatedReadiness": 89,
+      "delta": 24,
+      "changes": {
+        "JavaScript": 85,
+        "React": 75,
+        "Node.js": 70
+      }
+    },
+    {
+      "id": "sim-1791613640204-derc",
+      "createdAt": "2026-10-10T06:27:20.204Z",
+      "studentId": "student-demo-rahul",
+      "targetCareer": "Full Stack Developer",
+      "originalReadiness": 65,
+      "simulatedReadiness": 68,
+      "delta": 3,
+      "changes": {}
+    },
+    {
+      "id": "sim-demo-1",
+      "studentId": "student-demo-rahul",
+      "targetCareer": "Full Stack Developer",
+      "originalReadiness": 65,
+      "simulatedReadiness": 84,
+      "delta": 19,
+      "changes": {
+        "JavaScript": 85,
+        "React": 75,
+        "Node.js": 70
+      },
+      "createdAt": "2026-10-09T12:00:00.000Z"
+    }
+  ],
+  "skillHistory": {
+    "student-demo-rahul": [
+      {
+        "skill": "JavaScript",
+        "previous": 40,
+        "current": 60,
+        "date": "2026-09-15",
+        "source": "Assignment 2"
+      },
+      {
+        "skill": "HTML",
+        "previous": 75,
+        "current": 90,
+        "date": "2026-09-20",
+        "source": "Web Lab Exam"
+      },
+      {
+        "skill": "CSS",
+        "previous": 70,
+        "current": 85,
+        "date": "2026-09-22",
+        "source": "Project Sprint 1"
+      },
+      {
+        "skill": "SQL",
+        "previous": 35,
+        "current": 55,
+        "date": "2026-10-01",
+        "source": "DBMS Midterm"
+      },
+      {
+        "skill": "React",
+        "previous": 15,
+        "current": 30,
+        "date": "2026-10-06",
+        "source": "Lab Module"
+      }
+    ]
+  }
+}
